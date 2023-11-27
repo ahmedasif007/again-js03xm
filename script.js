@@ -44,23 +44,30 @@ function anatoVori(ana) {
  
  function evenOdd(inputString) {
    const length = inputString.length;
-   if (length / 2 ) {
-     result = 'even';
-   } else if (length  != 2) {
-     result = 'odd';
-   }
-   return result;
+ if (length % 2==0)  {
+   result = 'even';
+ } else {
+   result = 'odd';
  }
- console.log(evenOdd("Batch01"));   
+ return result;
+ }
+ console.log(evenOdd("Batch01")); 
+
  
- 
+
  
  // 5th ans
  
- function findingBadData(array) {
- 
-     
- }
+function findingBadData(array) {
+  if (array < -0 ) {
+    console.log("Bad Data");
+  } 
+  else if (array>0 ) {
+    console.log("Good Data");  
+  }
+}
+findingBadData(-10);
+
  
  // 6th ans(1)
  const cities = [
